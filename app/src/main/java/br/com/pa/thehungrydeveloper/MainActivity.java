@@ -1,6 +1,8 @@
 package br.com.pa.thehungrydeveloper;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -17,5 +19,11 @@ public class MainActivity extends AppCompatActivity {
 
         startersCard = findViewById(R.id.card_view_starters);
         mainsCard = findViewById(R.id.card_view_mains);
+
+        startersCard.setOnClickListener(v -> {
+            Intent startersActivityIntent = new Intent(MainActivity.this, StartersActivity.class);
+
+            startActivity(startersActivityIntent);
+        });
     }
 }
