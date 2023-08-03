@@ -20,6 +20,12 @@ public class MainActivity extends AppCompatActivity {
         startersCard = findViewById(R.id.card_view_starters);
         mainsCard = findViewById(R.id.card_view_mains);
 
+        mainsCard.setOnClickListener(v -> {
+            Intent mainCoursesActivityIntent = new Intent(MainActivity.this, MainCoursesActivity.class);
+
+            startActivity(mainCoursesActivityIntent);
+        });
+
         startersCard.setOnClickListener(v -> {
             Intent startersActivityIntent = new Intent(MainActivity.this, StartersActivity.class);
 
