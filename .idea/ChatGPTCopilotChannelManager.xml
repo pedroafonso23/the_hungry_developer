@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChatGPTCopilotChannelManager">
+    <dynamicCommends>
+      <option value="explain" />
+      <option value="translate to chinese" />
+      <option value="translate to english" />
+      <option value="check bugs" />
+      <option value="optimize code" />
+    </dynamicCommends>
     <chatChannels>
       <chatChannel>
         <option name="model" value="gpt-3.5-turbo" />
@@ -80,12 +87,20 @@
           </Message>
           <Message>
             <option name="content" value="list 10 dish names from fictional movies and games" />
-            <option name="id" value="cdda9167-456b-42b3-8593-c1b752d54554" />
             <option name="role" value="user" />
           </Message>
           <Message>
             <option name="content" value="1. Butterbeer (Harry Potter series)&#10;2. Lembas Bread (The Lord of the Rings)&#10;3. Roast Beast (How the Grinch Stole Christmas)&#10;4. Krabby Patty (SpongeBob SquarePants)&#10;5. Nuka-Cola (Fallout)&#10;6. Slurm (Futurama)&#10;7. Romulan Ale (Star Trek)&#10;8. Fruity Oaty Bars (Firefly)&#10;9. Big Kahuna Burger (Pulp Fiction)&#10;10. Stay Puft Marshmallows (Ghostbusters)" />
-            <option name="id" value="c173f54f-a4fe-43ec-961b-82ece20a7aea" />
+            <option name="role" value="assistant" />
+          </Message>
+          <Message>
+            <option name="content" value="list 10 desserts from fictional movies and games" />
+            <option name="id" value="c0f717a3-9409-497b-8434-31ab88bf9535" />
+            <option name="role" value="user" />
+          </Message>
+          <Message>
+            <option name="content" value="1. Everlasting Gobstopper (Willy Wonka &amp; the Chocolate Factory)&#10;2. Butterbeer Ice Cream (Harry Potter series)&#10;3. Lembas Bread (The Lord of the Rings)&#10;4. Pawpsicles (Zootopia)&#10;5. Blue Milkshake (Star Wars)&#10;6. Sugar Rush Cupcakes (Wreck-It Ralph)&#10;7. Melonpan (Spirited Away)&#10;8. Raktajino (Star Trek)&#10;9. Voodoo Donuts (The Princess and the Frog)&#10;10. Ration Bar (Half-Life)" />
+            <option name="id" value="bc5f3a42-8255-4dab-9034-d7caf0213229" />
             <option name="role" value="assistant" />
           </Message>
         </option>
