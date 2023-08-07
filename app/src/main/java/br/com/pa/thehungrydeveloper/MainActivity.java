@@ -1,8 +1,9 @@
 package br.com.pa.thehungrydeveloper;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-import android.view.View;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -30,6 +31,13 @@ public class MainActivity extends AppCompatActivity {
             Intent startersActivityIntent = new Intent(MainActivity.this, StartersActivity.class);
 
             startActivity(startersActivityIntent);
+        });
+
+        TextView emailTextView = findViewById(R.id.text_view_email_address);
+        emailTextView.setOnClickListener(v -> {
+            Intent launchEmailAppIntent = new Intent(Intent.ACTION_SENDTO);
+            launchEmailAppIntent.setData(Uri.parse(("mailto:thehungrydeveloper@pa.com.br")));
+            startActivity(launchEmailAppIntent);
         });
     }
 }
